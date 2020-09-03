@@ -4,6 +4,9 @@ build/
 # Node
 node_modules
 
+# TypeScript config should not be declared in the root
+/tsconfig.json
+
 # Log files
 npm-debug.log*
 yarn-debug.log*

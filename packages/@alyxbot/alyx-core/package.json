@@ -1,0 +1,9 @@
+{
+  "name": "@alyxbot/alyx-core",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Alyx Discord Bot core library and framework",
+  "author": "Seputaes <seputaes@sep.gg>",
+  "homepage": "https://sep.gg",
+  "license": "MIT"
+}

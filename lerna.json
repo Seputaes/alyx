@@ -4,5 +4,6 @@
   "useWorkspaces": true,
   "packages": [
     "packages/*"
-  ]
+  ],
+  "rejectCycles": true
 }

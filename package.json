@@ -4,15 +4,15 @@
   "description": "An experimental Discord bot and platform.",
   "repository": "https://github.com/Seputaes/alyx.git",
   "author": "Seputaes <seputaes@sep.gg>",
+  "homepage": "https://sep.gg",
   "license": "MIT",
   "private": true,
-
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "packages/@alyxbot/*"
     ]
   },
-
   "devDependencies": {
     "lerna": "^3.22.1",
     "typescript": "^4.0.2"
