@@ -1,0 +1,26 @@
+extends:
+  - airbnb
+  - prettier
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/typescript
+parser: "@typescript-eslint/parser"
+plugins:
+  - prettier
+rules:
+  prettier/prettier:
+    - error
+  import/extensions:
+    - error
+    - ignorePackages
+    - js: never
+      jsx: never
+      ts: never
+      tsx: never
+  no-console:
+    - off
+settings:
+  react:
+    # Hacky fix to a warning message when linting
+    # https://github.com/DRD4-7R/eslint-config-7r-building/issues/1
+    version: 999.999.999
