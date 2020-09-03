@@ -30,6 +30,9 @@ lerna-debug.log*
 .AppleDouble
 .LSOverride
 
+# coverage
+coverage
+
 # Editor directories and files
 .idea
 .vscode
