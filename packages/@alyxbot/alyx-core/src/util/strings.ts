@@ -35,4 +35,17 @@ export default class Strings {
     }
     return list;
   }
+
+  /**
+   * Checks whether a string is blank (null, empty, or consisting of only whitespace).
+   * @param input The string to check.
+   * @return Returns `true` if the string is blank, otherwise `false`.
+   */
+  static isBlank(input: string): boolean {
+    if (input == null || input.length === 0) {
+      return true;
+    }
+
+    return input.split("").find((char) => char !== " ") === undefined;
+  }
 }
