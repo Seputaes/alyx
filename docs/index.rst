@@ -6,6 +6,12 @@ Welcome to the documentation for Alyx_!
 Contents
 ========
 
+.. toctree::
+   :caption: Developers
+   :maxdepth: 2
+
+   developers/architecture
+
 Architecture
 ============
 
