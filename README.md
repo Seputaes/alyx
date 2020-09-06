@@ -13,9 +13,19 @@
 [![Discord](https://img.shields.io/discord/481539443170344961?label=Discord&style=flat-square&logo=discord)](https://sep.gg/discord)
 -----------------------------
 
-**Alyx** is a both a Discord Bot and a platform for self-hosted bot enthusiasts. In self-hosted 
+**Alyx** is a both a Discord Bot and a platform for self-hosted bot enthusiasts. In self-hosted
 environments, it is fully pluggable. Plugins can be added both from both official sources and
 third parties, allowing you to customize your own instance of Alyx to your liking and use case.
+
+The bot (will be) designed to run entirely in a AWS cloud-based _serverless_ environment. Initially,
+Alyx will support AWS services such as [AWS Fargate](https://aws.amazon.com/fargate/),
+allowing for instant scalability as a bot grows. Data persistence will be managed via
+[ElastiCache](https://aws.amazon.com/elasticache/), [RDS](https://aws.amazon.com/rds/),
+and [S3](https://aws.amazon.com/elasticache/). In a sharded environment, communication between
+shards will be facilitated by [SNS](https://aws.amazon.com/sns/).
+
+Support for other cloud platforms, such as Google Cloud or Azure, may be added in the future,
+but it is not the initial focus.
 
 ## Inviting Alyx
 
@@ -25,19 +35,19 @@ Alyx is not quite ready to be a 24/7 bot that can be invited to your server. Sta
 
 [ TODO ]
 
-Plugins are not currently able to be installed into instances of Alyx. This feature is in 
+Plugins are not currently able to be installed into instances of Alyx. This feature is in
 development.
 
 ## Why "Alyx?"
 
-The naming comes from the character [Alyx Vance](https://en.wikipedia.org/wiki/Alyx_Vance) 
-from the λ Half Life 2 video game series, and is one of my favorite video game characters of all 
+The naming comes from the character [Alyx Vance](https://en.wikipedia.org/wiki/Alyx_Vance)
+from the λ Half Life 2 video game series, and is one of my favorite video game characters of all
 time.
 
 ## Contributing
 Alyx is in its early stages of development.
 
-I fully welcome contributions ranging from bug fixes to new features. I would love for Alyx to evolve 
+I fully welcome contributions ranging from bug fixes to new features. I would love for Alyx to evolve
 intoa community development model as the bot becomes more fully featured.
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square&logo=github)](http://makeapullrequest.com)
@@ -45,7 +55,7 @@ intoa community development model as the bot becomes more fully featured.
 Have any thoughts? Open an [issue](https://github.com/seputaes/alyx/issues)! I welcome pull requests
 of any shape and size.  If your PR is a bit more complex than a bug fix or minor improvement,
 it's best practice to open an issue first so that a dialog can be started to flesh the idea out
-before time is spent perfecting it. 
+before time is spent perfecting it.
 
 ## License [![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/Seputaes/alyx/blob/master/LICENSE)
 
