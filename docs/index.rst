@@ -6,6 +6,11 @@ Welcome to the documentation for Alyx_!
 Contents
 ========
 
+Architecture
+============
+
+.. image:: assets/img/aws_arch.png
+
 License
 ===================
 Alyx Documentation is licensed under a
