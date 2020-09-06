@@ -1,0 +1,36 @@
+extends:
+  - airbnb-typescript/base
+  - airbnb/hooks
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/typescript
+  - prettier
+  - "prettier/@typescript-eslint"
+  - "plugin:prettier/recommended"
+parser: "@typescript-eslint/parser"
+parserOptions:
+  sourceType: module
+  project: "./tsconfig.json"
+plugins:
+  - prettier
+  - "@typescript-eslint"
+rules:
+  prettier/prettier:
+    - error
+  class-methods-use-this:
+    - off # This makes NoOp methods annoying...
+  no-use-before-define:
+    - off # TypeScript compiler will catch this, and eslint has horrible support for hoisting
+  import/no-cycle:
+    - off # Typescript compiler (mostly) takes care of this
+  no-useless-constructor:
+    - off # Typescript eslint plugin handles this
+  no-console:
+    - off # we're not a webapp
+  no-plusplus:
+    - off # Yeah, this is a dumb rule. There are plenty of times you need to do math on loop iterations
+settings:
+  react:
+    # Hacky fix to a warning message when linting
+    # https://github.com/DRD4-7R/eslint-config-7r-building/issues/1
+    version: 999.999.999
